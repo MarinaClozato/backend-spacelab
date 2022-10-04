@@ -31,4 +31,4 @@ app.use("/espacos", async function (req, res) {
   res.status(200).json({ data: reservas });
 });
 
-app.listen(3333);
+app.listen(process.env?.PORT ?? 3333);
